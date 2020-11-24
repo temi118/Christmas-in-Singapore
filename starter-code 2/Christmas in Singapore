@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Intro</title>
+  </head>
+
+  <body>
+
+    <header>
+      Christmas in Singapore
+
+    <h1>
+    Christmas Culture in Singapore
+    </h1>
+
+    <main>
+      
+      Christmas in Singapore is a big celebration that gives locals another excuse to do what they love most—Eat and shop.
+
+      At its heart, the holiday is still a special day for Christians in Singapore, who attend Christmas service in commemoration of the birth of Jesus Christ. It’s a religious celebration like any other, and regardless of your religious beliefs, everyone gets to take part in the fun of frolicking in fake snow, men in santa suits and of course, Christmas presents!
+    
+    </main>
+    <h2>
+      Christmas Shopping
+
+    </h2>
+    <main>
+      A close-up of the Christmas reindeer décor outside Wisma Atria shopping centre. Christmas on A Great Street. Every Christmas, the famous shopping belt on Orchard Road transforms into a dazzling winter wonderland of stars and festive decorations, leaving you with no doubt that 'tis the season to be jolly. Visitors to Orchard Road are greeted by a gateway that leads into the Yuletide inspired stretch, promising plenty of photo opportunities and of course, great shopping experiences! Expect to see the busy byways of Orchard Road decked out in festive lights, with a different theme every year.
+    </main>
+
+    <h3> 
+      Chrismas Wonderland
+    </h3>
+    <main>
+      An extravaganza of lights, sound and spectacle, Christmas Wonderland at Gardens by the Bay is a great place to experience Yule-themed festivities. Beside the dazzling lights and Christmas decorations, this month-long event features an array of attractions and carnival games. You’ll get to shop at the Festive Market, meet Santa at the largest Santa Grotto in Asia and skate under the stars.
+
+    </main>
+
+  <h4>
+    Marina Bay Countdown
+  </h4>
+  <main>
+    The countdown party at Singapore’s iconic Marina Bay has become the highlight of the year-end festive calendar. Join thousands of others to usher in the new year with music, live performances and one of the most spectacular fireworks shows in Asia.
+
+  </main>
+    <footer>
+    
+      <div>
+    
+      </div>
+    </footer>
+  </body>
+</html>

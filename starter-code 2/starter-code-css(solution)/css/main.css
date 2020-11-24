@@ -1,0 +1,148 @@
+/* Header styling */
+.header {
+  height: 400px;
+  background-color: aliceblue;
+  /*
+    Flexbox (written as flex) is a part of your
+    extracurricular topics.
+    
+    Here I use it first and foremost to place header
+    and navigation next to each other.
+   */
+  display: flex;
+  /* ...after this I center them vertically */
+  align-items: center;
+  /*
+    ...and horizontally! Remember, there are multiple ways to do all of this!
+
+    I chose to use flex because it was the only one
+    which gives me:
+    - ability to position header and nav next to each
+    other;
+    - center vertically;
+    - center horizontally; 
+  */
+  justify-content: center;
+}
+
+.header__name {
+  color: brown;
+  /* Check out in the browser what this does! */
+  margin-right: 18px;
+}
+
+/* Navigation styling */
+
+/*
+  To create unique and structured class names I use BEM approach.
+
+  In the case of navigation I give <header> element
+  which wraps the feature class header and navigation
+  header__navigation.
+
+  __ means that navigation is a child (nested inside
+  the header.
+ */
+.header__navigation {
+  background-color: #999999;
+  padding: 10px;
+}
+
+/*
+  Because list is nested inside BOTH header and
+  header__navigation correct class for it is
+  header__navigation__list.
+  
+  Looking at it you can easily tell relationship
+  between the elements.
+ */
+.header__navigation__list {
+  /*
+    This property allows you to not only hide bullet
+    points, but also replace them with other symbols.
+   */
+  list-style: none;
+  /*
+    By default browsers add padding to the lists, let's
+    remove it!
+  */
+  padding: 0;
+}
+
+.header__navigation__list__item {
+  /*
+    This is another way to position elements next to
+    each other!
+    
+    Notice that unlike flex it is applied to *children*.
+   */
+  display: inline-block;
+}
+
+/* Introduction paragraph styling */
+.introduction {
+  width: 300px;
+  /*
+    The way margin is written here is called shorthand:
+    - 18px changes top and bottom margins;
+    - 0 px changes left and right margins;
+
+    Shorthand can also be written as such - 1px 2px 3px 4px:
+    - 1px - top margin;
+    - 2px - right margin;
+    - 3px - bottom margin;
+    - 4px - left margin;
+    It goes clockwise through all the sides of
+    elements' box!
+   */
+  margin: 18px 0;
+}
+
+/* Special text styling */
+/*
+  Special text does not follow BEM approach for class
+  naming because we are setting it up to be used not
+  only inside introduction, but potentially anywhere on
+  the page! We don't want its name to be tied to
+  introduction.
+ */
+.specialText {
+  color: green;
+}
+
+/* Table styling */
+.table__highlighted-row {
+  font-size: 20px;
+}
+
+/*
+  In some cases you might not be able to give element a
+  class. In order top still style the element we can
+  use more complicated nested selectors like the one
+  shown below.
+  
+  Remember: avoid this as much as possible! More
+  complex selectors can make it harder for you to read
+  your code and slow down browser. 
+ */
+/*
+  Let's break this selector apart:
+  - .table - if possible we always start with an
+  element with class as it is more unique;
+  - .table tbody - writing tbody after .table means
+  that we only want to select tbody elements nested
+  inside .table;
+  - .table tbody tr:first-child - here the logic is the
+  same as before in regards to nesting, but we also
+  introduce :first-child. :first-child tells browser to
+  style element only if it is the first element inside
+  its parent;
+
+  Selectors like these are very specific. Check in the
+  browser which size the font is and try moving this
+  selector to be above the previous. Did anything
+  change on the page? Why?
+ */
+.table tbody tr:first-child {
+  font-size: 40px;
+}
